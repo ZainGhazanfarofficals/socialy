@@ -1,0 +1,20 @@
+.jobs{
+    padding-top: 5rem;
+    padding-inline: 4rem;
+    display: flex;
+    gap: 20px;
+    .jobs-left{
+        width: 225px !important;
+        height: max-content;
+    }
+    .jobs-center{
+        flex: 1;
+        
+    }
+    .jobs-right{
+        width: 300px !important;
+        height: max-content;
+        
+    }
+    
+}

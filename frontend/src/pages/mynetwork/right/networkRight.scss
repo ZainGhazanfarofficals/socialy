@@ -1,0 +1,216 @@
+.network-right-wrapper{
+    margin-bottom: 1rem;
+    // padding-top: 1rem;
+    .network-invitations{
+        border-radius: 0.6rem;
+        background-color: #fff;
+        border: 0.4px solid lightgray;
+        .network-invitations-header{
+            h3{
+                padding-inline: 1rem;
+                font-size: 1.1rem;
+                font-weight: 400;
+                padding-block: 1rem;
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                color: rgba(0,0,0,0.8);
+                border-bottom: 0.4px solid lightgray;
+            }
+        }
+        .network-invitations-body{
+            .network-invitations-body-item{
+                padding-inline: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding-block: 0.6rem;
+                &:not(:last-child){
+                    border-bottom: 0.4px solid lightgray;
+                }
+                // border: 1px solid blue;
+                .network-invitations-body-item-left{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 75px;
+                    img{
+                        width: 65px;
+                        height: 65px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+                .network-invitations-body-item-center{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.1rem;
+                    h4{
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 1rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        width: 60%;
+                        color: gray;
+                    }
+                    .network-organization{
+                        font-size: 1rem;
+                        color: gray;
+                    }
+                }
+                .network-invitations-body-item-right{
+                    button{
+                        padding: 0.5rem 1rem;
+                        border-radius: 0.4rem;
+                        border: none;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        
+                        &:first-child{  
+                            background-color: #fff;
+                            color: #0a66c2;
+                            border: 0.4px solid lightgray;
+                        }
+                        &:last-child{
+                            margin-left: 15px;
+                            background-color: #0a66c2;
+                            color: #fff;
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .network-recommendation{
+        margin-top: 20px;
+        border-radius: 0.6rem;
+        background-color: #fff;
+        overflow: hidden;
+        padding-bottom: 1rem;
+        border: 0.4px solid lightgray;
+        .network-invitations-header{
+            h3{
+                padding-inline: 1rem;
+                font-size: 1.1rem;
+                font-weight: 400;
+                padding-block: 1rem;
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                color: rgba(0,0,0,0.8);
+                // border-bottom: 0.4px solid lightgray;
+            }
+        }
+        .network-invitations-body{
+            ul{
+                // border: 1px solid red;
+                padding-inline: 1rem;
+                display: grid;
+                grid-template-columns: repeat(4,minmax(0,1fr));
+                list-style-type: none;
+                gap: 10px;
+                li{
+                    border: 1px solid blue;
+                    border-radius: 0.2em;
+                    overflow: hidden;
+                    border: 1px solid lightgray;
+                    display: flex;
+                    flex-direction: column;
+                    // gap: 0.5rem;
+                    justify-content: space-between;
+                    .background-cover{
+                        height: 60px;
+                        // border: 1px solid black;
+                        >*{
+                            // border: 1px solid yellow;
+                            background-position: center;
+                            background-size: cover;
+                            height: 100%;
+                            display: block;
+                        }
+                    }
+                    .profile-link{
+                        height: 76px;
+                        a{
+                            height: 100%;
+                            // border: 1px solid blue;
+                            text-decoration: none;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-between;
+                            img{
+                                width: 80px;
+                                height: 80px;
+                                // aspect-ratio: 1/1;
+                                border-radius: 50%;
+                                border: 2px solid white;
+                                overflow: hidden;
+                                margin-top: -37px;
+                            }
+                            span{
+                                text-align: center;
+                                font-size: 1.2rem;
+                                color: black;
+                            }
+                        }
+                    }
+                
+                    .description{
+                        color: rgba(0, 0, 0,0.6);
+                        font-size: 0.8rem;
+                        line-height: 1.333;
+                        display: block;
+                        margin-block-start: 0.6em;
+                        margin-block-end: 0.8em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        padding-inline: 12px;
+                        text-align: center;
+                        font-weight: 400;
+                        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;;
+                        
+                    }
+
+                    .current-organization{
+                        p{
+                            text-align: center;
+                            font-size: 0.8rem;
+                            color: rgba(0, 0, 0,0.6);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 5px;
+                        }
+                    }
+
+                    .connect{
+                        box-sizing: border-box;
+                        width: 100%;
+                        // border: 1px solid red;
+                        margin-block: 10px;
+                        button{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: transparent;
+                            gap: 8px;
+                            padding: 0.3rem 1rem;
+                            box-sizing: border-box;
+                            width: 80%;
+                            border-radius: 1.6rem;
+                            color: #0a66c2;
+                            border: 1.5px solid #0a66c2;
+                            margin: 0 auto;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+.jobs-left-wrapper{
+    .jobs-left-links{
+        border-radius: 0.6em;
+        background-color: #fff;
+        overflow: hidden;
+        border: 0.4px solid lightgray;
+        padding-block: 1rem;
+        a{
+            display: flex;
+            align-items: center;
+            padding-inline: 1rem;
+            padding-block: 0.9rem;
+            gap: 0.5rem;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.00938em;
+            text-decoration: none;
+            &:hover{
+                background-color: rgba(0,0,0,0.08);
+            }
+            &.active{
+                background-color: rgba(0,0,0,0.08);
+            }
+
+        }
+    }
+    .jobs-left-footer{
+        margin-block: 1.2rem;
+        button{
+            width: 100%;
+            padding-block: 0.5rem;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: #0a66c2;
+            border-radius: 2.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.00938em;
+            text-decoration: none;
+            border: 1.5px solid #0a66c2;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(0,0,0,0.08);
+            }
+        }
+    }
+}
+
+
+// Jobs input modal
+.jobs__modal{
+    .jobs__modal-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid lightgray;
+        h3{
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: rgba(0,0,0,0.9);
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.5;
+            letter-spacing: 0.00938em;
+            text-decoration: none;
+        }
+    }
+    .jobs__modal-body{
+        // padding-block: 1rem;
+        // padding-inline: 1rem;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        gap: 1rem;
+        .jobs__modal-body-left-input{
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+            padding-block: 0.5rem;
+            border-bottom: 1px solid lightgray;
+            &:last-child{
+                border-bottom: none;
+            }
+            label{
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                color: rgba(0,0,0,0.9);
+                font-size: 0.9rem;
+                font-weight: 400;
+                line-height: 1.5;
+                letter-spacing: 0.00938em;
+                text-decoration: none;
+            }
+            input{
+                width: 100%;
+                padding-block: 0.5rem;
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                color: rgba(0,0,0,0.9);
+                font-size: 0.9rem;
+                font-weight: 400;
+                line-height: 1.5;
+                letter-spacing: 0.00938em;
+                text-decoration: none;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .company-logo{
+        padding-top: 1rem;
+        color: blue;
+        label{
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+        input[type="file"]{
+            display: none;
+        }
+    }
+
+    .jobs__modal-footer{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 1rem;
+        button{
+            padding-block: 0.5rem;
+            padding-inline: 1rem;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: #0a66c2;
+            border-radius: 2.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.00938em;
+            text-decoration: none;
+            border: 1.5px solid #0a66c2;
+            cursor: pointer;
+            margin-left: 0.8rem;
+            background-color: #fff;
+            &:hover{
+                background-color: rgba(0,0,0,0.08);
+            }
+        }
+    }
+}

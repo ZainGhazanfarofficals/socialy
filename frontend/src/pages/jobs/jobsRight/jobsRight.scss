@@ -1,0 +1,132 @@
+.jobs-right-wrapper{
+    .open-to-work{
+        padding-block:1rem;
+        // padding-inline: 1rem;
+        border-radius: 0.6em;
+        background-color: #fff;
+        overflow: hidden;
+        border: 0.4px solid lightgray;
+        h3{
+            padding-inline: 1rem;
+            padding-top: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: rgba(0,0,0,0.8);
+        }
+        p{
+            padding-inline: 1rem;
+            font-size: 0.8rem;
+            font-weight: 400;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: rgba(0,0,0,0.8);
+            margin-top: 3px;
+        }
+        a{
+            padding: 1rem;
+            padding-block: 0.7rem;
+            margin-block: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            background-color: #f9fafb;
+            div{
+                flex: 1;
+                font-size: 0.8rem;
+                font-weight: 600;
+                font-family: Arial, sans-serif;
+                color: rgba(0,0,0,0.8);
+                text-decoration: none;
+                line-height: 1rem;
+            }
+            img{
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                overflow: hidden;
+            }   
+        }
+        div{
+            padding-inline: 1rem;
+            gap: 10px;
+            font-size: 0.8rem;
+            font-weight: 400;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: rgba(0,0,0,0.8);
+           
+        }
+        h2{
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: rgba(0,0,0,0.6);
+            padding-inline: 1rem;
+            padding-top: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            &:hover{
+                color: #0a66c2;
+                text-decoration: underline;
+            }
+        }
+    }
+    .jobs-image{
+        margin-top: 1rem;
+        border-radius: 0.6em;
+        overflow: hidden;
+        a{
+            width: 100%;
+            height: 350px;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+    
+            }
+        }
+    }
+    .linkedin-links{
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        // border-top: 0.4px solid lightgray;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 6px 0;
+            a{
+                text-decoration: none;
+                color: rgba(0,0,0,0.6);
+                font-size: 0.85rem;
+    
+                &:hover{
+                    color: #0a66c2;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .linkedin-abouts{
+        margin-top: 12px;
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 0.8rem;
+            color: rgba(0,0,0,0.6);
+            padding: 0 15px;
+            margin-block: 8px;
+            span{
+                font-size: 0.9rem;
+                svg{
+                    color: #0a66c2;
+                }
+            }
+        }
+    }
+}

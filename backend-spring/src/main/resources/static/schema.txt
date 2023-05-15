@@ -1,0 +1,63 @@
+create table users (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    phone VARCHAR(20) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    description TEXT,
+    profileImg VARCHAR(255),
+    coverImg VARCHAR(255),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE posts (
+  id INT NOT NULL AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  text TEXT,
+  image VARCHAR(255),
+  PRIMARY KEY (id),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+create table post_likes(
+    user_id INT NOT NULL,
+    post_id INT NOT NULL,
+    PRIMARY KEY (user_id,post_id),
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE
+);
+
+CREATE TABLE post_comments(
+    user_id INT NOT NULL,
+    post_id INT NOT NULL,
+    text TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (user_id,post_id),
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE
+);
+
+CREATE TABLE connections (
+    id INT NOT NULL AUTO_INCREMENT,
+    sender_id INT NOT NULL,
+    receiver_id INT NOT NULL,
+    status ENUM('pending','accepted','rejected') NOT NULL DEFAULT 'pending',
+    PRIMARY KEY (id),
+    FOREIGN KEY (sender_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (receiver_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE hashtags (
+    id INT NOT NULL AUTO_INCREMENT,
+    hashtag VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE hashtags_posts (
+    hashtag_id INT NOT NULL,
+    post_id INT NOT NULL,
+    FOREIGN KEY (hashtag_id) REFERENCES hashtags(id),
+    FOREIGN KEY (post_id) REFERENCES posts(id)
+);

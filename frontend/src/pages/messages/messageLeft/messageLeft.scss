@@ -1,0 +1,13 @@
+.message-left-wrapper{
+    display: flex;
+    background-color: #fff;
+    .chat-list{
+        width: 310px;
+        // border: 1px solid blue;
+    }
+    .chat-box{
+        flex:1;
+        border-left: 1px solid #e0e0e0;
+        // border: 1px solid red;
+    }
+}

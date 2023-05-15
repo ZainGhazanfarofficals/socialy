@@ -1,0 +1,16 @@
+.message{
+    padding-top: 5rem;
+    padding-inline: 4rem;
+    display: flex;
+    gap: 30px;
+    height: calc(100vh);
+    .message-left{
+        flex:1;
+        border: 0.8px solid #e0e0e0;
+        border-radius: 0.6em;
+        overflow: hidden;
+    }
+    .message-right{
+        width: 300px;
+    }
+}

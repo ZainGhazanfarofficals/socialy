@@ -1,0 +1,20 @@
+.network{
+    padding-top: 5rem;
+    padding-inline: 4rem;
+    // border: 2px solid black;
+    display: flex;
+    gap: 20px;
+    >*{
+        height: max-content;
+    }
+    .network-left{
+        width: 300px !important;
+        border-radius: 0.6rem;
+        background-color: #fff;
+        overflow: hidden;
+        border: 0.4px solid lightgray;
+    }
+    .network-right{
+        flex: 1;
+    }
+}

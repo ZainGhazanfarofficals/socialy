@@ -1,0 +1,154 @@
+.auth{
+    .auth-header{
+        // border: 1px solid red;
+        height:4rem;
+        padding-inline: 4rem;
+        display: flex;
+        align-items: center;
+    }
+    .auth-heading{
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #000;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        margin-block: 1rem;
+    }
+    .auth-form{
+        form{
+            width: 550px;
+            background-color: white;
+            border-radius: 0.6em;
+            margin: 1rem auto;
+            padding-inline: 2rem;
+            padding-block: 1rem;
+            box-sizing: content-box;
+            .auth-form-img{
+                // border:1px solid black;
+                display: flex;
+                // justify-content: center;
+                align-items: stretch;
+                margin-bottom: 1rem;
+                height: 100px;
+                width: 100%;
+                gap: 56px;
+                .auth-cover-img{
+                    flex: 1;
+                    // border: 1px solid red;
+                    background-size:contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    display: block;
+                }
+                .auth-profile-img{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width:90px;
+                        height: 90px;
+                        object-fit: cover;
+                        border: 1.5px solid #a4a4a4;
+                        border-radius: 50%;
+                        overflow: hidden;
+                    }
+                }
+            }
+            .error-msg{
+                margin-bottom: 0.5rem;
+                color: red;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .login-form-input{
+                // padding-top: 1rem;
+                input{
+                    // width: 48%;
+                    margin-block: 1rem;
+                    width: 100%;
+                    display: block;
+                    padding: 0.8rem;
+                    font-size: 1rem;
+                    outline: none;
+                    background: transparent;
+                    border: 1.5px solid #ccc;
+                    font-size: 1rem;
+                }
+            }
+            .auth-form-input{
+                // border: 1px solid red;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                input{
+                    width: 48%;
+                    padding: 0.5rem;
+                    outline: none;
+                    background: transparent;
+                    border: 1.5px solid #ccc;
+                    font-size: 1rem;
+                }
+            }
+            .auth-textarea{
+                textarea{
+                    width: 100%;
+                    height: 3.5rem;
+                    font-size: 1rem;
+                    line-height: 1.2rem;
+                    padding: 0.5rem;
+                    outline: none;
+                    border: 1.5px solid #ccc;
+                }
+            }
+            .auth-image-input{
+                margin-bottom: 1rem;
+                // border: 1px solid blue;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 0.3rem;
+                label{
+                    p{
+                        font-size: 1rem;
+                        color: #000;
+                        font-weight: 400;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        // text-align: center;
+                        cursor: pointer;
+                        &:hover{
+                            color:#0a66c2;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                input{
+                    display: none;
+                }
+            }
+            .auth-links{
+                display: flex;
+                justify-content: space-between;
+                // border: 1px solid red;
+                margin-bottom: 1rem;
+                a{
+                    text-decoration: none;
+                    color: #0a66c2;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .auth-form-btn{
+                button{
+                    border: none;
+                    outline: none;
+                    background: #0a66c2;
+                    color: white;
+                    font-size: 1rem;
+                    width: 100%;
+                    padding: 0.8rem;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+            }
+        }
+    }
+}

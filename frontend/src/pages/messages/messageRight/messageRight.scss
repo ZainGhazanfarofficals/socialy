@@ -1,0 +1,58 @@
+.message-right-wrapper{
+    .linkedin-image{
+        border-radius: 0.6em;
+        overflow: hidden;
+        a{
+            width: 100%;
+            height: 350px;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+
+            }
+        }
+    }
+    .linkedin-links{
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        // border-top: 0.4px solid lightgray;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 6px 0;
+            a{
+                text-decoration: none;
+                color: rgba(0,0,0,0.6);
+                font-size: 0.85rem;
+
+                &:hover{
+                    color: #0a66c2;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .linkedin-abouts{
+        margin-top: 12px;
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-size: 0.8rem;
+            color: rgba(0,0,0,0.6);
+            padding: 0 15px;
+            margin-block: 8px;
+            span{
+                font-size: 0.9rem;
+                svg{
+                    color: #0a66c2;
+                }
+            }
+        }
+    }
+}

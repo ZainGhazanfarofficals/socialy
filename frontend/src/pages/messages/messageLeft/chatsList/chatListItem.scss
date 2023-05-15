@@ -1,0 +1,56 @@
+.chat-list-item{
+    height: 90px;
+    border-bottom: 1.5px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+    gap: 0.5rem;
+    position: relative;
+    text-decoration: none;
+    &:hover{
+        background-color: rgba(0,0,0,0.1);
+    }
+    
+    .chat-item-image{
+        
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+    }
+    .chat-item-info{
+        // border: 1px solid blue;
+        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3{
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            height: 30%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        p{
+            height: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: rgba(0,0,0,0.8);
+            text-overflow: ellipsis;
+            line-height: 1rem;
+            overflow: hidden;
+        }
+        
+    
+        
+    }
+}

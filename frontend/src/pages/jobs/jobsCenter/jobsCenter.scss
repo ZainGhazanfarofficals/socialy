@@ -1,0 +1,117 @@
+.jobs-center-wrapper{
+    .jobs-recent-search{
+        padding-block:1rem;
+        // padding-inline: 1rem;
+        border-radius: 0.6em;
+        background-color: #fff;
+        overflow: hidden;
+        border: 0.4px solid lightgray;
+        h3{
+            padding-inline: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding-block: 1rem;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: rgba(0,0,0,0.8);
+            display: flex;
+            justify-content: space-between;
+            span:last-child{
+                font-size: 1rem;
+                color: rgba(0,0,0,0.8);
+                font-weight: 400;
+            }
+        }
+        .jobs-recent-search-list{
+            .jobs-recent-search-item{
+                padding-block: 0.5rem;
+                border-bottom: 0.4px solid lightgray;
+                margin-inline: 1rem;
+                h4{
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    font-family: 'Arial Narrow', Arial, sans-serif;
+                    color: rgba(0,0,0,0.8);
+                    span{
+                        color: rgb(21, 183, 21);
+                    }
+                }
+                p{
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    font-family: 'Arial Narrow', Arial, sans-serif;
+                    color: rgba(0,0,0,0.8);}
+            }
+        }
+    }
+    .recommendation-jobs{
+        margin-top: 0.7rem;
+        padding-block:1rem;
+        padding-inline: 1rem;
+        border-radius: 0.6em;
+        background-color: #fff;
+        overflow: hidden;
+        border: 0.4px solid lightgray;
+        h3{
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: rgba(0,0,0,0.8);
+        }
+        p{
+            font-size: 0.8rem;
+            font-weight: 400;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: rgba(0,0,0,0.7);
+            margin-top: 2px;
+            margin-bottom: 1rem;
+        }
+        .recommendation-jobs-list{
+            .recommendation-jobs-item{
+                display: flex;
+                gap: 15px;
+                // border: 1px solid red;
+                padding-block: 1rem;
+
+                border-bottom: 0.4px solid lightgray;
+                .jobs-item-left{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        display: inline-block;
+                        width: 55px;
+                        height: 55px;
+                    }
+                }
+                .jobs-item-center{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    a{
+                        font-size: 1rem;
+                        font-weight: 400;
+                        font-family: 'Arial Narrow', Arial, sans-serif;
+                        color: blue;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    h5{
+                        font-size: 0.9rem;
+                        font-weight: 400;
+                        font-family: 'Arial Narrow', Arial, sans-serif;
+                        color: rgba(0,0,0,0.8);
+                    }
+                    p{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                .jobs-item-right{
+                    width: max-content;
+                }
+            }
+        }
+    }
+}
